@@ -17,6 +17,7 @@ export const mastra = new Mastra({
   agents: { weatherAgent, plannerAgent, developerAgent },
   scorers: { toolCallAppropriatenessScorer, completenessScorer, translationScorer },
   storage: new PostgresStore({
+    id: 'mastra-storage',
     connectionString: process.env.SUPABASE_CONNECTION_STRING!,
   }),
   logger: new PinoLogger({
