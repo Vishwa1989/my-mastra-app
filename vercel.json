@@ -1,6 +1,0 @@
-{
-  "buildCommand": "mastra build",
-  "outputDirectory": ".mastra/output",
-  "installCommand": "npm install",
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-}

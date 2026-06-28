@@ -19,6 +19,7 @@
   "dependencies": {
     "@ai-sdk/google": "^3.0.80",
     "@mastra/core": "^1.37.1",
+    "@mastra/deployer-vercel": "^1.2.2",
     "@mastra/duckdb": "^1.4.0",
     "@mastra/editor": "^0.10.1",
     "@mastra/evals": "^1.2.3",
