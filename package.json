@@ -17,17 +17,22 @@
     "node": ">=22.13.0"
   },
   "dependencies": {
+    "@ai-sdk/google": "^3.0.80",
     "@mastra/core": "^1.37.1",
     "@mastra/duckdb": "^1.4.0",
+    "@mastra/editor": "^0.10.1",
     "@mastra/evals": "^1.2.3",
     "@mastra/libsql": "^1.11.1",
     "@mastra/loggers": "^1.1.1",
     "@mastra/memory": "^1.20.0",
     "@mastra/observability": "^1.14.0",
+    "@mastra/pg": "^1.11.1",
+    "pg": "^8.21.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
+    "@types/pg": "^8.20.0",
     "mastra": "^1.10.2",
     "typescript": "^6.0.3"
   }
