@@ -3,7 +3,6 @@ import { Mastra } from '@mastra/core/mastra';
 import { PinoLogger } from '@mastra/loggers';
 import { PostgresStore } from '@mastra/pg';
 import { Observability, MastraStorageExporter, MastraPlatformExporter, SensitiveDataFilter } from '@mastra/observability';
-import { VercelDeployer } from '@mastra/deployer-vercel';
 import { weatherWorkflow } from './workflows/weather-workflow';
 import { devWorkflow } from './workflows/dev-workflow';
 import { weatherAgent } from './agents/weather-agent';
@@ -12,7 +11,6 @@ import { developerAgent } from './agents/developer-agent';
 import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } from './scorers/weather-scorer';
 
 export const mastra = new Mastra({
-  deployer: new VercelDeployer(),
   workflows: { weatherWorkflow, devWorkflow },
   agents: { weatherAgent, plannerAgent, developerAgent },
   scorers: { toolCallAppropriatenessScorer, completenessScorer, translationScorer },
