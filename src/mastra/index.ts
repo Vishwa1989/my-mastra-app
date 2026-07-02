@@ -13,6 +13,14 @@ import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } 
 
 export const mastra = new Mastra({
   editor: new MastraEditor(),
+  server: {
+    cors: {
+      origin: ['https://mastra-studio-production-2eb0.up.railway.app'],
+      allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      allowHeaders: ['Content-Type', 'Authorization'],
+      credentials: true,
+    },
+  },
   workflows: { weatherWorkflow, devWorkflow },
   agents: { weatherAgent, plannerAgent, developerAgent },
   scorers: { toolCallAppropriatenessScorer, completenessScorer, translationScorer },
